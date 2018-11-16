@@ -1,0 +1,68 @@
+1. Add loading page
+2. Add campgrounds page that list all campgrounds
+
+Each campground has:
+1. name
+2. image
+
+Layout and Basic Styling
+1. Create our hearder and footer partials
+2. Add in Bootstrap
+
+Create new campgrounds
+1. setup new campground POST route
+2. add in body-parser
+3. setup route to show form
+4. add basic unstyled form
+
+Style the campgrounds page
+1. Add a better header/title
+2. Make campgrounds display in a grid
+
+Style the Navbar and Form
+1.Add a navbar to all templates
+2. Style the new campground form
+
+Add Mongoose
+1. install, configure
+2. setup campground model
+3. use campground model in our route
+
+Show Page
+1. review the RESTful routes we've seen so far
+2. Add description to our campground model
+3. show db.collection.drop()
+4. add a show route/template
+
+name     url    verb    desc.
+=========================================
+INDEX    /dogs  GET   display all dogs
+NEW      /dogs/new  GET   display form to have new dogs
+CREATE   /dogs   POST     Add new dog to DB
+SHOW     /dogs/:id  GET   Shows info about the dog
+
+
+
+
+
+
+# Add the Comment module
+Display set of comments
+
+# Comment Create
+1. discuss nested routes
+2. add the comment new and create routes
+3. add the new comment form 
+
+NEW     campgrounds/:id/comments/new    GET
+Create  campgrounds/:id/comments        POST
+
+Sytle Show Page
+
+
+<% if(!currentUser){ %>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Sign Up</a></li>
+                <% } else{ %>
+                    <li><a href="/logout">Logout</a></li>
+                <% } %>
